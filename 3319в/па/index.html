@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 50px;
+        img{
+            width: 200px;
+        }
+    }
+</style>
+<body>
+    <script>
+        let a;
+        a = prompt("Вам есть 18 лет")
+        if (a == "да"){
+            let cards = ['images/name.png','images/1.png', 'images/2.png','images/8.png','images/9.png','images/11.jfif','images/12.jfif','images/13.jfif','images/14.png']
+
+
+for (let i = 0; i < 9; i++){
+    document.write('<img src="' + cards[i] +'">');
+}
+        }
+        else{
+            document.write("нельзя")
+        }
+       
+    </script>
+</body>
+</html>
