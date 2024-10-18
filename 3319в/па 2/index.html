@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let citeimg = ["media/cite1.jpg", "media/cite2.jpg", "media/cite3.jpg", "media/cite4.jpg", "media/cite5.jpg", "media/cite6.jpg", "media/cite7.jpg", "media/cite8.jpg", "media/cite9.png", "media/cite10.jpg",]
+        let description = ["Ивантеевка","Москва","Щелково","Нижний новгород","Курск","Воглоград","Питер","Белгород","Уфа","Пермь",]
+
+        for(i = 0; i < 9; i++){
+            document.write('<img src="' + citeimg[i] + '"> <p>' + description[i] + '</p>')
+        }
+    </script>
+</body>
+</html>

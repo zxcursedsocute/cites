@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute red cube</title>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    posX = 0;
+    posY = 0;
+
+    let elem = document.getElementById('box');
+    elem.style.position = "fixed";
+    elem.style.top = posY + 'px';
+    elem.style.left = posX + 'px';
+    elem.style.width = '100px';
+    elem.style.height = '100px';
+    elem.style.backgroundColor = 'red';
+
+let down = true
+
+    setInterval(function moveBox(){
+        
+        elem.style.top= posX + 'px';
+        elem.style.left = posY + 'px';
+        if(posX < 855 && down == true){
+            posX++;
+            posY++;
+        }
+       else{
+        down = false
+       }
+       if(posX > 1 && down == false){
+        posX -= 1;
+        posY -= 1;
+       }
+       else{
+        down = true
+       }
+    }, 1)
+</script>
+</html>
